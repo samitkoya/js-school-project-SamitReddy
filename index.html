@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Timeline of Technology</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The Timeline of Technology</h1>
+            <button id="theme-toggle" aria-label="Toggle dark mode">🌙 Dark Mode</button>
+        </header>
+
+        <div class="timeline-container">
+            <div class="timeline-slider">
+    <label for="year-slider" class="sr-only">Select a year</label>
+    <input 
+        type="range" 
+        min="0" 
+        max="100" 
+        value="0" 
+        class="slider" 
+        id="year-slider"
+        aria-label="Timeline year selector"
+        title="Drag to select a year"
+    >
+    <div class="timeline-labels" id="timeline-labels"></div>
+</div>
+        </div>
+
+        <div class="content-container">
+            <div class="year-display">
+                <h2 id="current-year">Select a year</h2>
+                <div class="event-content">
+                    <div class="event-image-container">
+                        <img id="event-image" src="" alt="Event image">
+                    </div>
+                    <div class="event-text">
+                        <h3 id="event-title">Select a year to view its tech milestone</h3>
+                        <p id="event-summary"></p>
+                        <button id="learn-more" class="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+<script type="module" src="dist/index.js"></script>
+</body>
+</html>
